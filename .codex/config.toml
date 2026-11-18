@@ -1,0 +1,11 @@
+# MCP servers for AI-assisted development in this repository.
+# playwright: lets the AI actually open and play-test the site/game in a browser.
+# context7: fetches up-to-date library documentation so generated code uses current APIs.
+
+[mcp_servers.playwright]
+command = "npx"
+args = ["-y", "@playwright/mcp@latest"]
+
+[mcp_servers.context7]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp@latest"]
